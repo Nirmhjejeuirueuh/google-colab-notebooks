@@ -5,6 +5,308 @@
   "last_link_id": 166,
   "nodes": [
     {
+      "id": 43,
+      "type": "SaveImage",
+      "pos": [
+        17060,
+        2040
+      ],
+      "size": [
+        630,
+        440
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 154
+        }
+      ],
+      "outputs": [],
+      "title": "Save Image - Low angle",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.76",
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "ComfyUI-low_angle"
+      ]
+    },
+    {
+      "id": 45,
+      "type": "SaveImage",
+      "pos": [
+        17730,
+        2040
+      ],
+      "size": [
+        630,
+        440
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 157
+        }
+      ],
+      "outputs": [],
+      "title": "Save Image - 45 left",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.76",
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "ComfyUI-45_left"
+      ]
+    },
+    {
+      "id": 41,
+      "type": "SaveImage",
+      "pos": [
+        16390,
+        2040
+      ],
+      "size": [
+        630,
+        440
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 155
+        }
+      ],
+      "outputs": [],
+      "title": "Save Image - Aerial view",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.76",
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "ComfyUI-aerial_view"
+      ]
+    },
+    {
+      "id": 69,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        15620,
+        1670
+      ],
+      "size": [
+        210,
+        90
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            161
+          ]
+        }
+      ],
+      "title": "Prompt 45deg right",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.12.3",
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "Rotate the camera 45 degrees to the right.\n"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 70,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        15620,
+        1810
+      ],
+      "size": [
+        210,
+        90
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            163
+          ]
+        }
+      ],
+      "title": "Prompt Aerial view",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.12.3",
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "Turn the camera to an aerial view."
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 71,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        15860,
+        1810
+      ],
+      "size": [
+        210,
+        90
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            164
+          ]
+        }
+      ],
+      "title": "Prompt Low angle",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.12.3",
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "Turn the camera to a low-angle view."
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 73,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        15620,
+        1950
+      ],
+      "size": [
+        210,
+        90
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            165
+          ]
+        }
+      ],
+      "title": "Prompt Left 45deg",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.12.3",
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "Rotate the camera 45 degrees to the left."
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 75,
+      "type": "MarkdownNote",
+      "pos": [
+        14538.263937766837,
+        1535.6084303421305
+      ],
+      "size": [
+        517.5244994481727,
+        485.9766768505449
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "For Local User",
+      "properties": {},
+      "widgets_values": [
+        "## Report issue\n\nIf you found any issues when running this workflow, [report template issue here](https://github.com/Comfy-Org/workflow_templates/issues)\n\n\n## Model links\n\n**text_encoders**\n\n- [qwen_2.5_vl_7b_fp8_scaled.safetensors](https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/text_encoders/qwen_2.5_vl_7b_fp8_scaled.safetensors)\n\n**loras**\n\n- [Qwen-Edit-2509-Multiple-angles.safetensors](https://huggingface.co/Comfy-Org/Qwen-Image-Edit_ComfyUI/resolve/main/split_files/loras/Qwen-Edit-2509-Multiple-angles.safetensors)\n- [Qwen-Image-Edit-2509-Lightning-4steps-V1.0-bf16.safetensors](https://huggingface.co/lightx2v/Qwen-Image-Lightning/resolve/main/Qwen-Image-Edit-2509/Qwen-Image-Edit-2509-Lightning-4steps-V1.0-bf16.safetensors)\n\n**diffusion_models**\n\n- [qwen_image_edit_2509_fp8_e4m3fn.safetensors](https://huggingface.co/Comfy-Org/Qwen-Image-Edit_ComfyUI/resolve/main/split_files/diffusion_models/qwen_image_edit_2509_fp8_e4m3fn.safetensors)\n\n**vae**\n\n- [qwen_image_vae.safetensors](https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/vae/qwen_image_vae.safetensors)\n\n\nModel Storage Location\n\n```\n📂 ComfyUI/\n├── 📂 models/\n│   ├── 📂 text_encoders/\n│   │      └── qwen_2.5_vl_7b_fp8_scaled.safetensors\n│   ├── 📂 loras/\n│   │      ├── Qwen-Edit-2509-Multiple-angles.safetensors\n│   │      └── Qwen-Image-Edit-2509-Lightning-4steps-V1.0-bf16.safetensors\n│   ├── 📂 diffusion_models/\n│   │      └── qwen_image_edit_2509_fp8_e4m3fn.safetensors\n│   └── 📂 vae/\n│          └── qwen_image_vae.safetensors\n```\n\n"
+      ],
+      "color": "#432",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 67,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        15864.240998870722,
+        1947.7383887659373
+      ],
+      "size": [
+        210,
+        90
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            160
+          ]
+        }
+      ],
+      "title": "Prompt Wide angle",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.12.3",
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "Turn the camera to a wide-angle lens.\n"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
       "id": 48,
       "type": "0f47377a-2933-4dba-9791-a9c54b078226",
       "pos": [
@@ -18,7 +320,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 0,
+      "order": 6,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -73,75 +375,107 @@
       "widgets_values": []
     },
     {
-      "id": 47,
+      "id": 36,
       "type": "SaveImage",
       "pos": [
-        18400,
-        2040
+        18400.003584148137,
+        1530
       ],
       "size": [
         630,
         440
       ],
       "flags": {},
-      "order": 17,
-      "mode": 0,
+      "order": 14,
+      "mode": 4,
       "inputs": [
         {
           "name": "images",
           "type": "IMAGE",
-          "link": 156
+          "link": 153
         }
       ],
       "outputs": [],
-      "title": "Save Image - 90 left",
+      "title": "Save Image - 45 right",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.3.76",
         "Node name for S&R": "SaveImage"
       },
       "widgets_values": [
-        "ComfyUI-90_left"
+        "ComfyUI-45_right"
       ]
     },
     {
-      "id": 41,
+      "id": 34,
       "type": "SaveImage",
       "pos": [
-        16390,
-        2040
+        18412.507235164707,
+        2045.002754979536
       ],
       "size": [
-        630,
-        440
+        626.71875,
+        438.17708333333337
       ],
       "flags": {},
-      "order": 16,
-      "mode": 0,
+      "order": 12,
+      "mode": 4,
       "inputs": [
         {
           "name": "images",
           "type": "IMAGE",
-          "link": 155
+          "link": 151
         }
       ],
       "outputs": [],
-      "title": "Save Image - Aerial view",
+      "title": "Save Image - Wide shot",
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.3.76",
         "Node name for S&R": "SaveImage"
       },
       "widgets_values": [
-        "ComfyUI-aerial_view"
+        "ComfyUI-wide_shot"
+      ]
+    },
+    {
+      "id": 31,
+      "type": "SaveImage",
+      "pos": [
+        16390,
+        1530
+      ],
+      "size": [
+        626.71875,
+        438.17708333333337
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 152
+        }
+      ],
+      "outputs": [],
+      "title": "Save Image - Back view (180)",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.76",
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "ComfyUI-back_view"
       ]
     },
     {
       "id": 38,
       "type": "SaveImage",
       "pos": [
-        18400,
-        1530
+        17049.992778208994,
+        1517.4999331315641
       ],
       "size": [
         630,
@@ -169,375 +503,36 @@
       ]
     },
     {
-      "id": 25,
-      "type": "LoadImage",
+      "id": 47,
+      "type": "SaveImage",
       "pos": [
-        15080,
-        1790
+        17712.496322236067,
+        1517.4972048994018
       ],
       "size": [
-        470.8463541666667,
-        439.8828125
+        630,
+        440
       ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 1,
+      "flags": {},
+      "order": 17,
       "mode": 0,
-      "inputs": [],
-      "outputs": [
+      "inputs": [
         {
-          "name": "IMAGE",
+          "name": "images",
           "type": "IMAGE",
-          "links": [
-            149
-          ]
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": null
+          "link": 156
         }
       ],
-      "title": "Load Character Image",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.50",
-        "Node name for S&R": "LoadImage",
-        "enableTabs": false,
-        "tabWidth": 65,
-        "tabXOffset": 10,
-        "hasSecondTab": false,
-        "secondTabText": "Send Back",
-        "secondTabOffset": 80,
-        "secondTabWidth": 65,
-        "ue_properties": {
-          "widget_ue_connectable": {
-            "image": true,
-            "upload": true
-          }
-        }
-      },
-      "widgets_values": [
-        "character_input.png",
-        "image"
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
-      "id": 66,
-      "type": "PrimitiveStringMultiline",
-      "pos": [
-        15620,
-        1530
-      ],
-      "size": [
-        210,
-        90
-      ],
-      "flags": {},
-      "order": 2,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            159
-          ]
-        }
-      ],
-      "title": "Prompt Close up",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.12.3",
-        "Node name for S&R": "PrimitiveStringMultiline"
-      },
-      "widgets_values": [
-        " Turn the camera to a close-up.\n"
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
-      "id": 67,
-      "type": "PrimitiveStringMultiline",
-      "pos": [
-        15860,
-        1530
-      ],
-      "size": [
-        210,
-        90
-      ],
-      "flags": {},
-      "order": 3,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            160
-          ]
-        }
-      ],
-      "title": "Prompt Wide angle",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.12.3",
-        "Node name for S&R": "PrimitiveStringMultiline"
-      },
-      "widgets_values": [
-        "Turn the camera to a wide-angle lens.\n"
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
-      "id": 69,
-      "type": "PrimitiveStringMultiline",
-      "pos": [
-        15620,
-        1670
-      ],
-      "size": [
-        210,
-        90
-      ],
-      "flags": {},
-      "order": 4,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            161
-          ]
-        }
-      ],
-      "title": "Prompt 45deg right",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.12.3",
-        "Node name for S&R": "PrimitiveStringMultiline"
-      },
-      "widgets_values": [
-        "Rotate the camera 45 degrees to the right.\n"
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
-      "id": 68,
-      "type": "PrimitiveStringMultiline",
-      "pos": [
-        15860,
-        1670
-      ],
-      "size": [
-        210,
-        90
-      ],
-      "flags": {},
-      "order": 5,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            162
-          ]
-        }
-      ],
-      "title": "Prompt 90deg right",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.12.3",
-        "Node name for S&R": "PrimitiveStringMultiline"
-      },
-      "widgets_values": [
-        "Rotate the camera 90 degrees to the right.\n"
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
-      "id": 70,
-      "type": "PrimitiveStringMultiline",
-      "pos": [
-        15620,
-        1810
-      ],
-      "size": [
-        210,
-        90
-      ],
-      "flags": {},
-      "order": 6,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            163
-          ]
-        }
-      ],
-      "title": "Prompt Aerial view",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.12.3",
-        "Node name for S&R": "PrimitiveStringMultiline"
-      },
-      "widgets_values": [
-        "Turn the camera to an aerial view."
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
-      "id": 71,
-      "type": "PrimitiveStringMultiline",
-      "pos": [
-        15860,
-        1810
-      ],
-      "size": [
-        210,
-        90
-      ],
-      "flags": {},
-      "order": 7,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            164
-          ]
-        }
-      ],
-      "title": "Prompt Low angle",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.12.3",
-        "Node name for S&R": "PrimitiveStringMultiline"
-      },
-      "widgets_values": [
-        "Turn the camera to a low-angle view."
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
-      "id": 73,
-      "type": "PrimitiveStringMultiline",
-      "pos": [
-        15620,
-        1950
-      ],
-      "size": [
-        210,
-        90
-      ],
-      "flags": {},
-      "order": 8,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            165
-          ]
-        }
-      ],
-      "title": "Prompt Left 45deg",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.12.3",
-        "Node name for S&R": "PrimitiveStringMultiline"
-      },
-      "widgets_values": [
-        "Rotate the camera 45 degrees to the left."
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
-      "id": 72,
-      "type": "PrimitiveStringMultiline",
-      "pos": [
-        15860,
-        1950
-      ],
-      "size": [
-        210,
-        90
-      ],
-      "flags": {},
-      "order": 9,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            166
-          ]
-        }
-      ],
-      "title": "Prompt 90deg",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.12.3",
-        "Node name for S&R": "PrimitiveStringMultiline"
-      },
-      "widgets_values": [
-        "Rotate the camera 90 degrees to the left."
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
-      "id": 75,
-      "type": "MarkdownNote",
-      "pos": [
-        14538.263937766837,
-        1535.6084303421305
-      ],
-      "size": [
-        517.5244994481727,
-        485.9766768505449
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 10,
-      "mode": 0,
-      "inputs": [],
       "outputs": [],
-      "title": "For Local User",
-      "properties": {},
+      "title": "Save Image - 90 left",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.76",
+        "Node name for S&R": "SaveImage"
+      },
       "widgets_values": [
-        "## Report issue\n\nIf you found any issues when running this workflow, [report template issue here](https://github.com/Comfy-Org/workflow_templates/issues)\n\n\n## Model links\n\n**text_encoders**\n\n- [qwen_2.5_vl_7b_fp8_scaled.safetensors](https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/text_encoders/qwen_2.5_vl_7b_fp8_scaled.safetensors)\n\n**loras**\n\n- [Qwen-Edit-2509-Multiple-angles.safetensors](https://huggingface.co/Comfy-Org/Qwen-Image-Edit_ComfyUI/resolve/main/split_files/loras/Qwen-Edit-2509-Multiple-angles.safetensors)\n- [Qwen-Image-Edit-2509-Lightning-4steps-V1.0-bf16.safetensors](https://huggingface.co/lightx2v/Qwen-Image-Lightning/resolve/main/Qwen-Image-Edit-2509/Qwen-Image-Edit-2509-Lightning-4steps-V1.0-bf16.safetensors)\n\n**diffusion_models**\n\n- [qwen_image_edit_2509_fp8_e4m3fn.safetensors](https://huggingface.co/Comfy-Org/Qwen-Image-Edit_ComfyUI/resolve/main/split_files/diffusion_models/qwen_image_edit_2509_fp8_e4m3fn.safetensors)\n\n**vae**\n\n- [qwen_image_vae.safetensors](https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/vae/qwen_image_vae.safetensors)\n\n\nModel Storage Location\n\n```\n📂 ComfyUI/\n├── 📂 models/\n│   ├── 📂 text_encoders/\n│   │      └── qwen_2.5_vl_7b_fp8_scaled.safetensors\n│   ├── 📂 loras/\n│   │      ├── Qwen-Edit-2509-Multiple-angles.safetensors\n│   │      └── Qwen-Image-Edit-2509-Lightning-4steps-V1.0-bf16.safetensors\n│   ├── 📂 diffusion_models/\n│   │      └── qwen_image_edit_2509_fp8_e4m3fn.safetensors\n│   └── 📂 vae/\n│          └── qwen_image_vae.safetensors\n```\n\n"
-      ],
-      "color": "#432",
-      "bgcolor": "#000"
+        "ComfyUI-90_left"
+      ]
     },
     {
       "id": 65,
@@ -548,7 +543,7 @@
       ],
       "size": [
         210,
-        566
+        606
       ],
       "flags": {
         "collapsed": false
@@ -759,6 +754,171 @@
         "",
         ""
       ]
+    },
+    {
+      "id": 25,
+      "type": "LoadImage",
+      "pos": [
+        15080,
+        1790
+      ],
+      "size": [
+        470.8463541666667,
+        439.8828125
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            149
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "title": "Load Character Image",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.50",
+        "Node name for S&R": "LoadImage",
+        "enableTabs": false,
+        "tabWidth": 65,
+        "tabXOffset": 10,
+        "hasSecondTab": false,
+        "secondTabText": "Send Back",
+        "secondTabOffset": 80,
+        "secondTabWidth": 65,
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "image": true,
+            "upload": true
+          }
+        }
+      },
+      "widgets_values": [
+        "Gemini_Generated_Image_qfrqbzqfrqbzqfrq.png",
+        "image"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 66,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        15620,
+        1530
+      ],
+      "size": [
+        210,
+        90
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            159
+          ]
+        }
+      ],
+      "title": "Prompt 180deg",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.12.3",
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "<sks> back view eye-level shot full body, same body pose, hands in same position"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 72,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        15853.638501693918,
+        1537.5628598224616
+      ],
+      "size": [
+        210,
+        90
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            166
+          ]
+        }
+      ],
+      "title": "Prompt 90deg left",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.12.3",
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "<sks> left side view eye-level shot full body, same body pose, hands in same position"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 68,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        15860,
+        1670
+      ],
+      "size": [
+        210,
+        90
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            162
+          ]
+        }
+      ],
+      "title": "Prompt 90deg right",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.12.3",
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "<sks> right side view eye-level shot full body, same body pose, hands in same position"
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
     }
   ],
   "links": [
@@ -937,7 +1097,7 @@
         },
         "revision": 0,
         "config": {},
-        "name": "Generate Close-up",
+        "name": "Generate 180deg",
         "inputNode": {
           "id": -10,
           "bounding": [
@@ -1393,7 +1553,7 @@
               "widget_ue_connectable": {}
             },
             "widgets_values": [
-              1106429432136498,
+              922614204349625,
               "randomize",
               4,
               1,
@@ -1857,7 +2017,7 @@
             ],
             "flags": {},
             "order": 0,
-            "mode": 0,
+            "mode": 4,
             "inputs": [
               {
                 "localized_name": "model",
@@ -1910,7 +2070,7 @@
             ],
             "flags": {},
             "order": 1,
-            "mode": 0,
+            "mode": 4,
             "inputs": [
               {
                 "localized_name": "model",
@@ -1959,7 +2119,7 @@
             ],
             "flags": {},
             "order": 2,
-            "mode": 0,
+            "mode": 4,
             "inputs": [
               {
                 "localized_name": "pixels",
@@ -2014,7 +2174,7 @@
             ],
             "flags": {},
             "order": 3,
-            "mode": 0,
+            "mode": 4,
             "inputs": [
               {
                 "localized_name": "clip",
@@ -2087,7 +2247,7 @@
               "collapsed": false
             },
             "order": 5,
-            "mode": 0,
+            "mode": 4,
             "inputs": [
               {
                 "localized_name": "samples",
@@ -2142,7 +2302,7 @@
             ],
             "flags": {},
             "order": 6,
-            "mode": 0,
+            "mode": 4,
             "inputs": [
               {
                 "localized_name": "model",
@@ -2194,7 +2354,7 @@
               "widget_ue_connectable": {}
             },
             "widgets_values": [
-              864993937066247,
+              488964095260803,
               "randomize",
               4,
               1,
@@ -2218,7 +2378,7 @@
               "collapsed": false
             },
             "order": 7,
-            "mode": 0,
+            "mode": 4,
             "inputs": [
               {
                 "localized_name": "image",
@@ -2263,7 +2423,7 @@
             ],
             "flags": {},
             "order": 8,
-            "mode": 0,
+            "mode": 4,
             "inputs": [
               {
                 "localized_name": "images",
@@ -2293,7 +2453,7 @@
             ],
             "flags": {},
             "order": 4,
-            "mode": 0,
+            "mode": 4,
             "inputs": [
               {
                 "localized_name": "clip",
@@ -2658,7 +2818,7 @@
             ],
             "flags": {},
             "order": 0,
-            "mode": 0,
+            "mode": 4,
             "inputs": [
               {
                 "localized_name": "model",
@@ -2711,7 +2871,7 @@
             ],
             "flags": {},
             "order": 1,
-            "mode": 0,
+            "mode": 4,
             "inputs": [
               {
                 "localized_name": "model",
@@ -2760,7 +2920,7 @@
             ],
             "flags": {},
             "order": 2,
-            "mode": 0,
+            "mode": 4,
             "inputs": [
               {
                 "localized_name": "pixels",
@@ -2815,7 +2975,7 @@
             ],
             "flags": {},
             "order": 3,
-            "mode": 0,
+            "mode": 4,
             "inputs": [
               {
                 "localized_name": "clip",
@@ -2888,7 +3048,7 @@
               "collapsed": false
             },
             "order": 5,
-            "mode": 0,
+            "mode": 4,
             "inputs": [
               {
                 "localized_name": "samples",
@@ -2943,7 +3103,7 @@
             ],
             "flags": {},
             "order": 6,
-            "mode": 0,
+            "mode": 4,
             "inputs": [
               {
                 "localized_name": "model",
@@ -2995,7 +3155,7 @@
               "widget_ue_connectable": {}
             },
             "widgets_values": [
-              405868421823137,
+              400530108629693,
               "randomize",
               4,
               1,
@@ -3019,7 +3179,7 @@
               "collapsed": false
             },
             "order": 7,
-            "mode": 0,
+            "mode": 4,
             "inputs": [
               {
                 "localized_name": "image",
@@ -3064,7 +3224,7 @@
             ],
             "flags": {},
             "order": 8,
-            "mode": 0,
+            "mode": 4,
             "inputs": [
               {
                 "localized_name": "images",
@@ -3094,7 +3254,7 @@
             ],
             "flags": {},
             "order": 4,
-            "mode": 0,
+            "mode": 4,
             "inputs": [
               {
                 "localized_name": "clip",
@@ -3796,7 +3956,7 @@
               "widget_ue_connectable": {}
             },
             "widgets_values": [
-              507933693362283,
+              1035936554806594,
               "randomize",
               4,
               1,
@@ -4597,7 +4757,7 @@
               "widget_ue_connectable": {}
             },
             "widgets_values": [
-              202646758175812,
+              417045855832684,
               "randomize",
               4,
               1,
@@ -5061,7 +5221,7 @@
             ],
             "flags": {},
             "order": 0,
-            "mode": 0,
+            "mode": 4,
             "inputs": [
               {
                 "localized_name": "model",
@@ -5114,7 +5274,7 @@
             ],
             "flags": {},
             "order": 1,
-            "mode": 0,
+            "mode": 4,
             "inputs": [
               {
                 "localized_name": "model",
@@ -5163,7 +5323,7 @@
             ],
             "flags": {},
             "order": 2,
-            "mode": 0,
+            "mode": 4,
             "inputs": [
               {
                 "localized_name": "pixels",
@@ -5218,7 +5378,7 @@
             ],
             "flags": {},
             "order": 3,
-            "mode": 0,
+            "mode": 4,
             "inputs": [
               {
                 "localized_name": "clip",
@@ -5291,7 +5451,7 @@
               "collapsed": false
             },
             "order": 5,
-            "mode": 0,
+            "mode": 4,
             "inputs": [
               {
                 "localized_name": "samples",
@@ -5346,7 +5506,7 @@
             ],
             "flags": {},
             "order": 6,
-            "mode": 0,
+            "mode": 4,
             "inputs": [
               {
                 "localized_name": "model",
@@ -5398,7 +5558,7 @@
               "widget_ue_connectable": {}
             },
             "widgets_values": [
-              757958372345700,
+              121774255537720,
               "randomize",
               4,
               1,
@@ -5422,7 +5582,7 @@
               "collapsed": false
             },
             "order": 7,
-            "mode": 0,
+            "mode": 4,
             "inputs": [
               {
                 "localized_name": "image",
@@ -5467,7 +5627,7 @@
             ],
             "flags": {},
             "order": 8,
-            "mode": 0,
+            "mode": 4,
             "inputs": [
               {
                 "localized_name": "images",
@@ -5497,7 +5657,7 @@
             ],
             "flags": {},
             "order": 4,
-            "mode": 0,
+            "mode": 4,
             "inputs": [
               {
                 "localized_name": "clip",
@@ -5862,7 +6022,7 @@
             ],
             "flags": {},
             "order": 0,
-            "mode": 0,
+            "mode": 4,
             "inputs": [
               {
                 "localized_name": "model",
@@ -5915,7 +6075,7 @@
             ],
             "flags": {},
             "order": 1,
-            "mode": 0,
+            "mode": 4,
             "inputs": [
               {
                 "localized_name": "model",
@@ -5964,7 +6124,7 @@
             ],
             "flags": {},
             "order": 2,
-            "mode": 0,
+            "mode": 4,
             "inputs": [
               {
                 "localized_name": "pixels",
@@ -6019,7 +6179,7 @@
             ],
             "flags": {},
             "order": 3,
-            "mode": 0,
+            "mode": 4,
             "inputs": [
               {
                 "localized_name": "clip",
@@ -6092,7 +6252,7 @@
               "collapsed": false
             },
             "order": 5,
-            "mode": 0,
+            "mode": 4,
             "inputs": [
               {
                 "localized_name": "samples",
@@ -6147,7 +6307,7 @@
             ],
             "flags": {},
             "order": 6,
-            "mode": 0,
+            "mode": 4,
             "inputs": [
               {
                 "localized_name": "model",
@@ -6199,7 +6359,7 @@
               "widget_ue_connectable": {}
             },
             "widgets_values": [
-              495293742630408,
+              816894042051683,
               "randomize",
               4,
               1,
@@ -6223,7 +6383,7 @@
               "collapsed": false
             },
             "order": 7,
-            "mode": 0,
+            "mode": 4,
             "inputs": [
               {
                 "localized_name": "image",
@@ -6268,7 +6428,7 @@
             ],
             "flags": {},
             "order": 4,
-            "mode": 0,
+            "mode": 4,
             "inputs": [
               {
                 "localized_name": "clip",
@@ -6348,7 +6508,7 @@
             ],
             "flags": {},
             "order": 8,
-            "mode": 0,
+            "mode": 4,
             "inputs": [
               {
                 "localized_name": "images",
@@ -6663,7 +6823,7 @@
             ],
             "flags": {},
             "order": 0,
-            "mode": 0,
+            "mode": 4,
             "inputs": [
               {
                 "localized_name": "model",
@@ -6716,7 +6876,7 @@
             ],
             "flags": {},
             "order": 1,
-            "mode": 0,
+            "mode": 4,
             "inputs": [
               {
                 "localized_name": "model",
@@ -6765,7 +6925,7 @@
             ],
             "flags": {},
             "order": 2,
-            "mode": 0,
+            "mode": 4,
             "inputs": [
               {
                 "localized_name": "pixels",
@@ -6820,7 +6980,7 @@
             ],
             "flags": {},
             "order": 3,
-            "mode": 0,
+            "mode": 4,
             "inputs": [
               {
                 "localized_name": "clip",
@@ -6893,7 +7053,7 @@
               "collapsed": false
             },
             "order": 5,
-            "mode": 0,
+            "mode": 4,
             "inputs": [
               {
                 "localized_name": "samples",
@@ -6950,7 +7110,7 @@
               "collapsed": false
             },
             "order": 7,
-            "mode": 0,
+            "mode": 4,
             "inputs": [
               {
                 "localized_name": "image",
@@ -6995,7 +7155,7 @@
             ],
             "flags": {},
             "order": 8,
-            "mode": 0,
+            "mode": 4,
             "inputs": [
               {
                 "localized_name": "images",
@@ -7025,7 +7185,7 @@
             ],
             "flags": {},
             "order": 4,
-            "mode": 0,
+            "mode": 4,
             "inputs": [
               {
                 "localized_name": "clip",
@@ -7105,7 +7265,7 @@
             ],
             "flags": {},
             "order": 6,
-            "mode": 0,
+            "mode": 4,
             "inputs": [
               {
                 "localized_name": "model",
@@ -7157,7 +7317,7 @@
               "widget_ue_connectable": {}
             },
             "widgets_values": [
-              941061162245235,
+              896179676866510,
               "randomize",
               4,
               1,
@@ -8826,93 +8986,11 @@
             }
           },
           {
-            "id": 35,
-            "type": "7a63c466-efd0-41c6-b9a4-bbbec01fd12f",
-            "pos": [
-              16230,
-              990
-            ],
-            "size": [
-              280,
-              404
-            ],
-            "flags": {
-              "collapsed": false
-            },
-            "order": 1,
-            "mode": 0,
-            "inputs": [
-              {
-                "localized_name": "model",
-                "name": "model",
-                "type": "MODEL",
-                "link": 105
-              },
-              {
-                "localized_name": "vae",
-                "name": "vae",
-                "type": "VAE",
-                "link": 106
-              },
-              {
-                "localized_name": "clip",
-                "name": "clip",
-                "type": "CLIP",
-                "link": 107
-              },
-              {
-                "localized_name": "image",
-                "name": "image",
-                "type": "IMAGE",
-                "link": 110
-              },
-              {
-                "name": "prompt",
-                "type": "STRING",
-                "widget": {
-                  "name": "prompt"
-                },
-                "link": 148
-              }
-            ],
-            "outputs": [
-              {
-                "localized_name": "IMAGE",
-                "name": "IMAGE",
-                "type": "IMAGE",
-                "links": [
-                  40
-                ]
-              }
-            ],
-            "properties": {
-              "proxyWidgets": [
-                [
-                  "-1",
-                  "prompt"
-                ],
-                [
-                  "21",
-                  "seed"
-                ],
-                [
-                  "21",
-                  "control_after_generate"
-                ]
-              ],
-              "cnr_id": "comfy-core",
-              "ver": "0.3.76"
-            },
-            "widgets_values": [
-              ""
-            ]
-          },
-          {
             "id": 37,
             "type": "0fa92773-03c8-4142-b133-0a7984ebf385",
             "pos": [
-              15900,
-              1250
+              15891.462286135897,
+              1270.49051327385
             ],
             "size": [
               281.25,
@@ -8922,7 +9000,7 @@
               "collapsed": false
             },
             "order": 2,
-            "mode": 0,
+            "mode": 4,
             "inputs": [
               {
                 "localized_name": "model",
@@ -8990,11 +9068,340 @@
             ]
           },
           {
+            "id": 42,
+            "type": "e73dd290-d72e-48d9-9cb8-263978864dfd",
+            "pos": [
+              15888.047200590254,
+              1723.1975899656861
+            ],
+            "size": [
+              280,
+              404
+            ],
+            "flags": {
+              "collapsed": false
+            },
+            "order": 5,
+            "mode": 4,
+            "inputs": [
+              {
+                "localized_name": "model",
+                "name": "model",
+                "type": "MODEL",
+                "link": 115
+              },
+              {
+                "localized_name": "vae",
+                "name": "vae",
+                "type": "VAE",
+                "link": 116
+              },
+              {
+                "localized_name": "clip",
+                "name": "clip",
+                "type": "CLIP",
+                "link": 117
+              },
+              {
+                "localized_name": "image",
+                "name": "image",
+                "type": "IMAGE",
+                "link": 118
+              },
+              {
+                "name": "prompt",
+                "type": "STRING",
+                "widget": {
+                  "name": "prompt"
+                },
+                "link": 151
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "IMAGE",
+                "name": "IMAGE",
+                "type": "IMAGE",
+                "links": [
+                  59
+                ]
+              }
+            ],
+            "properties": {
+              "proxyWidgets": [
+                [
+                  "-1",
+                  "prompt"
+                ],
+                [
+                  "21",
+                  "seed"
+                ],
+                [
+                  "21",
+                  "control_after_generate"
+                ]
+              ],
+              "cnr_id": "comfy-core",
+              "ver": "0.3.76"
+            },
+            "widgets_values": [
+              ""
+            ]
+          },
+          {
+            "id": 35,
+            "type": "7a63c466-efd0-41c6-b9a4-bbbec01fd12f",
+            "pos": [
+              16216.339657817432,
+              820.9532654907309
+            ],
+            "size": [
+              280,
+              404
+            ],
+            "flags": {
+              "collapsed": false
+            },
+            "order": 1,
+            "mode": 4,
+            "inputs": [
+              {
+                "localized_name": "model",
+                "name": "model",
+                "type": "MODEL",
+                "link": 105
+              },
+              {
+                "localized_name": "vae",
+                "name": "vae",
+                "type": "VAE",
+                "link": 106
+              },
+              {
+                "localized_name": "clip",
+                "name": "clip",
+                "type": "CLIP",
+                "link": 107
+              },
+              {
+                "localized_name": "image",
+                "name": "image",
+                "type": "IMAGE",
+                "link": 110
+              },
+              {
+                "name": "prompt",
+                "type": "STRING",
+                "widget": {
+                  "name": "prompt"
+                },
+                "link": 148
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "IMAGE",
+                "name": "IMAGE",
+                "type": "IMAGE",
+                "links": [
+                  40
+                ]
+              }
+            ],
+            "properties": {
+              "proxyWidgets": [
+                [
+                  "-1",
+                  "prompt"
+                ],
+                [
+                  "21",
+                  "seed"
+                ],
+                [
+                  "21",
+                  "control_after_generate"
+                ]
+              ],
+              "cnr_id": "comfy-core",
+              "ver": "0.3.76"
+            },
+            "widgets_values": [
+              ""
+            ]
+          },
+          {
+            "id": 44,
+            "type": "dd5bbf11-5767-45ee-bc1a-7012473bd7cb",
+            "pos": [
+              16226.584914454363,
+              1709.5372477831188
+            ],
+            "size": [
+              281.25,
+              404
+            ],
+            "flags": {
+              "collapsed": false
+            },
+            "order": 6,
+            "mode": 4,
+            "inputs": [
+              {
+                "localized_name": "model",
+                "name": "model",
+                "type": "MODEL",
+                "link": 119
+              },
+              {
+                "localized_name": "vae",
+                "name": "vae",
+                "type": "VAE",
+                "link": 120
+              },
+              {
+                "localized_name": "clip",
+                "name": "clip",
+                "type": "CLIP",
+                "link": 121
+              },
+              {
+                "localized_name": "image",
+                "name": "image",
+                "type": "IMAGE",
+                "link": 122
+              },
+              {
+                "name": "prompt",
+                "type": "STRING",
+                "widget": {
+                  "name": "prompt"
+                },
+                "link": 152
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "IMAGE",
+                "name": "IMAGE",
+                "type": "IMAGE",
+                "links": [
+                  64
+                ]
+              }
+            ],
+            "properties": {
+              "proxyWidgets": [
+                [
+                  "-1",
+                  "prompt"
+                ],
+                [
+                  "21",
+                  "seed"
+                ],
+                [
+                  "21",
+                  "control_after_generate"
+                ]
+              ],
+              "cnr_id": "comfy-core",
+              "ver": "0.3.76"
+            },
+            "widgets_values": [
+              ""
+            ]
+          },
+          {
+            "id": 33,
+            "type": "e3abecd3-2aa7-408a-83bb-90f14e706169",
+            "pos": [
+              15882.92457227179,
+              815.8306371722687
+            ],
+            "size": [
+              281.25,
+              404
+            ],
+            "flags": {
+              "collapsed": false
+            },
+            "order": 0,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "model",
+                "name": "model",
+                "type": "MODEL",
+                "link": 102
+              },
+              {
+                "localized_name": "vae",
+                "name": "vae",
+                "type": "VAE",
+                "link": 103
+              },
+              {
+                "localized_name": "clip",
+                "name": "clip",
+                "type": "CLIP",
+                "link": 104
+              },
+              {
+                "localized_name": "image",
+                "name": "image",
+                "type": "IMAGE",
+                "link": 109
+              },
+              {
+                "name": "prompt",
+                "type": "STRING",
+                "widget": {
+                  "name": "prompt"
+                },
+                "link": 147
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "IMAGE",
+                "name": "IMAGE",
+                "type": "IMAGE",
+                "links": [
+                  39
+                ]
+              }
+            ],
+            "title": "Generate 180deg",
+            "properties": {
+              "proxyWidgets": [
+                [
+                  "-1",
+                  "prompt"
+                ],
+                [
+                  "21",
+                  "seed"
+                ],
+                [
+                  "21",
+                  "control_after_generate"
+                ]
+              ],
+              "cnr_id": "comfy-core",
+              "ver": "0.3.76"
+            },
+            "widgets_values": [
+              ""
+            ]
+          },
+          {
             "id": 39,
             "type": "1c290d33-3ee6-409d-8f39-e3885e3e205e",
             "pos": [
               16230,
-              1250
+              1255.1226283184624
             ],
             "size": [
               281.25,
@@ -9072,257 +9479,11 @@
             ]
           },
           {
-            "id": 42,
-            "type": "e73dd290-d72e-48d9-9cb8-263978864dfd",
-            "pos": [
-              15900,
-              1520
-            ],
-            "size": [
-              280,
-              404
-            ],
-            "flags": {
-              "collapsed": false
-            },
-            "order": 5,
-            "mode": 0,
-            "inputs": [
-              {
-                "localized_name": "model",
-                "name": "model",
-                "type": "MODEL",
-                "link": 115
-              },
-              {
-                "localized_name": "vae",
-                "name": "vae",
-                "type": "VAE",
-                "link": 116
-              },
-              {
-                "localized_name": "clip",
-                "name": "clip",
-                "type": "CLIP",
-                "link": 117
-              },
-              {
-                "localized_name": "image",
-                "name": "image",
-                "type": "IMAGE",
-                "link": 118
-              },
-              {
-                "name": "prompt",
-                "type": "STRING",
-                "widget": {
-                  "name": "prompt"
-                },
-                "link": 151
-              }
-            ],
-            "outputs": [
-              {
-                "localized_name": "IMAGE",
-                "name": "IMAGE",
-                "type": "IMAGE",
-                "links": [
-                  59
-                ]
-              }
-            ],
-            "properties": {
-              "proxyWidgets": [
-                [
-                  "-1",
-                  "prompt"
-                ],
-                [
-                  "21",
-                  "seed"
-                ],
-                [
-                  "21",
-                  "control_after_generate"
-                ]
-              ],
-              "cnr_id": "comfy-core",
-              "ver": "0.3.76"
-            },
-            "widgets_values": [
-              ""
-            ]
-          },
-          {
-            "id": 44,
-            "type": "dd5bbf11-5767-45ee-bc1a-7012473bd7cb",
-            "pos": [
-              16230,
-              1520
-            ],
-            "size": [
-              281.25,
-              404
-            ],
-            "flags": {
-              "collapsed": false
-            },
-            "order": 6,
-            "mode": 0,
-            "inputs": [
-              {
-                "localized_name": "model",
-                "name": "model",
-                "type": "MODEL",
-                "link": 119
-              },
-              {
-                "localized_name": "vae",
-                "name": "vae",
-                "type": "VAE",
-                "link": 120
-              },
-              {
-                "localized_name": "clip",
-                "name": "clip",
-                "type": "CLIP",
-                "link": 121
-              },
-              {
-                "localized_name": "image",
-                "name": "image",
-                "type": "IMAGE",
-                "link": 122
-              },
-              {
-                "name": "prompt",
-                "type": "STRING",
-                "widget": {
-                  "name": "prompt"
-                },
-                "link": 152
-              }
-            ],
-            "outputs": [
-              {
-                "localized_name": "IMAGE",
-                "name": "IMAGE",
-                "type": "IMAGE",
-                "links": [
-                  64
-                ]
-              }
-            ],
-            "properties": {
-              "proxyWidgets": [
-                [
-                  "-1",
-                  "prompt"
-                ],
-                [
-                  "21",
-                  "seed"
-                ],
-                [
-                  "21",
-                  "control_after_generate"
-                ]
-              ],
-              "cnr_id": "comfy-core",
-              "ver": "0.3.76"
-            },
-            "widgets_values": [
-              ""
-            ]
-          },
-          {
-            "id": 46,
-            "type": "f8c65a72-1b09-4a5b-93c1-5e431d47aa9b",
-            "pos": [
-              15900,
-              1800
-            ],
-            "size": [
-              280,
-              404
-            ],
-            "flags": {
-              "collapsed": false
-            },
-            "order": 7,
-            "mode": 0,
-            "inputs": [
-              {
-                "localized_name": "model",
-                "name": "model",
-                "type": "MODEL",
-                "link": 127
-              },
-              {
-                "localized_name": "vae",
-                "name": "vae",
-                "type": "VAE",
-                "link": 128
-              },
-              {
-                "localized_name": "clip",
-                "name": "clip",
-                "type": "CLIP",
-                "link": 129
-              },
-              {
-                "localized_name": "image",
-                "name": "image",
-                "type": "IMAGE",
-                "link": 130
-              },
-              {
-                "name": "prompt",
-                "type": "STRING",
-                "widget": {
-                  "name": "prompt"
-                },
-                "link": 153
-              }
-            ],
-            "outputs": [
-              {
-                "localized_name": "IMAGE",
-                "name": "IMAGE",
-                "type": "IMAGE",
-                "links": [
-                  69
-                ]
-              }
-            ],
-            "properties": {
-              "proxyWidgets": [
-                [
-                  "-1",
-                  "prompt"
-                ],
-                [
-                  "21",
-                  "seed"
-                ],
-                [
-                  "21",
-                  "control_after_generate"
-                ]
-              ],
-              "cnr_id": "comfy-core",
-              "ver": "0.3.76"
-            },
-            "widgets_values": [
-              ""
-            ]
-          },
-          {
             "id": 40,
             "type": "bd0db7e4-bbb5-4a0c-bf57-429a2c393ffd",
             "pos": [
-              16230,
-              1800
+              16207.801943953327,
+              2187.6122094303432
             ],
             "size": [
               280,
@@ -9400,45 +9561,45 @@
             ]
           },
           {
-            "id": 33,
-            "type": "e3abecd3-2aa7-408a-83bb-90f14e706169",
+            "id": 46,
+            "type": "f8c65a72-1b09-4a5b-93c1-5e431d47aa9b",
             "pos": [
-              15900,
-              990
+              15881.217029498974,
+              2175.6594100205957
             ],
             "size": [
-              281.25,
+              280,
               404
             ],
             "flags": {
               "collapsed": false
             },
-            "order": 0,
-            "mode": 0,
+            "order": 7,
+            "mode": 4,
             "inputs": [
               {
                 "localized_name": "model",
                 "name": "model",
                 "type": "MODEL",
-                "link": 102
+                "link": 127
               },
               {
                 "localized_name": "vae",
                 "name": "vae",
                 "type": "VAE",
-                "link": 103
+                "link": 128
               },
               {
                 "localized_name": "clip",
                 "name": "clip",
                 "type": "CLIP",
-                "link": 104
+                "link": 129
               },
               {
                 "localized_name": "image",
                 "name": "image",
                 "type": "IMAGE",
-                "link": 109
+                "link": 130
               },
               {
                 "name": "prompt",
@@ -9446,7 +9607,7 @@
                 "widget": {
                   "name": "prompt"
                 },
-                "link": 147
+                "link": 153
               }
             ],
             "outputs": [
@@ -9455,7 +9616,7 @@
                 "name": "IMAGE",
                 "type": "IMAGE",
                 "links": [
-                  39
+                  69
                 ]
               }
             ],
@@ -10012,10 +10173,10 @@
     "VHS_MetadataImage": true,
     "VHS_KeepIntermediate": true,
     "ds": {
-      "scale": 0.9431740309142633,
+      "scale": 0.5856368671503223,
       "offset": [
-        -15256.12804813415,
-        -1248.3192319147613
+        -14759.49080383793,
+        -1179.6217342470072
       ]
     }
   },
