@@ -1,0 +1,122 @@
+{
+  "25": {
+    "inputs": {
+      "scale": 2,
+      "color_fix": true,
+      "tiled_vae": true,
+      "tiled_dit": true,
+      "tile_size": 256,
+      "tile_overlap": 24,
+      "unload_dit": false,
+      "sparse_ratio": 2,
+      "kv_ratio": 3,
+      "local_range": 11,
+      "seed": 690648935497334,
+      "pipe": [
+        "27",
+        0
+      ],
+      "frames": [
+        "28",
+        0
+      ]
+    },
+    "class_type": "FlashVSRNodeAdv",
+    "_meta": {
+      "title": "FlashVSR Ultra-Fast (Advanced)"
+    }
+  },
+  "27": {
+    "inputs": {
+      "model": "FlashVSR-v1.1",
+      "mode": "tiny",
+      "alt_vae": "none",
+      "force_offload": true,
+      "precision": "bf16",
+      "device": "auto",
+      "attention_mode": "sparse_sage_attention"
+    },
+    "class_type": "FlashVSRInitPipe",
+    "_meta": {
+      "title": "FlashVSR Init Pipeline"
+    }
+  },
+  "28": {
+    "inputs": {
+      "aspect_ratio": "original",
+      "proportional_width": 1,
+      "proportional_height": 1,
+      "fit": "letterbox",
+      "method": "lanczos",
+      "round_to_multiple": "None",
+      "scale_to_side": "longest",
+      "scale_to_length": 720,
+      "background_color": "#000000",
+      "image": [
+        "29",
+        0
+      ]
+    },
+    "class_type": "LayerUtility: ImageScaleByAspectRatio V2",
+    "_meta": {
+      "title": "LayerUtility: ImageScaleByAspectRatio V2"
+    }
+  },
+  "29": {
+    "inputs": {
+      "video": "20260213_110317_Copy_of_20260209_1520_01kh0ptyjvecnawm6n864z55de_cleaned.mp4",
+      "force_rate": 0,
+      "custom_width": 0,
+      "custom_height": 0,
+      "frame_load_cap": 0,
+      "skip_first_frames": 0,
+      "select_every_nth": 1,
+      "format": "AnimateDiff"
+    },
+    "class_type": "VHS_LoadVideo",
+    "_meta": {
+      "title": "Load Video (Upload) 🎥🅥🅗🅢"
+    }
+  },
+  "31": {
+    "inputs": {
+      "video_info": [
+        "29",
+        3
+      ]
+    },
+    "class_type": "VHS_VideoInfo",
+    "_meta": {
+      "title": "Video Info 🎥🅥🅗🅢"
+    }
+  },
+  "39": {
+    "inputs": {
+      "frame_rate": [
+        "31",
+        5
+      ],
+      "loop_count": 0,
+      "filename_prefix": "AnimateDiff",
+      "format": "video/h264-mp4",
+      "pix_fmt": "yuv420p",
+      "crf": 19,
+      "save_metadata": true,
+      "trim_to_audio": false,
+      "pingpong": false,
+      "save_output": true,
+      "images": [
+        "25",
+        0
+      ],
+      "audio": [
+        "29",
+        2
+      ]
+    },
+    "class_type": "VHS_VideoCombine",
+    "_meta": {
+      "title": "Video Combine 🎥🅥🅗🅢"
+    }
+  }
+}
